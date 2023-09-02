@@ -1,0 +1,62 @@
+//- index.pug
+doctype html
+html
+  head
+    title Nritya Shala
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul 
+            div#logo
+              img(src="/static/image/2logo.png")
+              //- | NS
+            li #[a(href='/') Home]
+            li #[a(href='/') About]
+            li #[a(href='/') Services]
+            li #[a(href='/') Class Info]
+            li #[a(href='/') Contact Us]
+
+    section#introSection 
+        div Welcome to NRITYA SHALA
+        div.small Where Tradition and Grace Merge in Rhythmic Tales 
+
+    section#missionSection 
+        h2  Our Mission 
+        div.card
+          h3 Dance Perfection
+          div.card-box
+            div.card-img
+              img(src="static/image/d1.png")
+            div.card-content
+              p In the realm of dance, when each step meticulously woven, dance perfection is born.
+
+        div.card
+          h3 Dance is the way
+          div.card-box
+            div.card-img
+              img(src="static/image/d2.png")
+            div.card-content
+              p Dance is not only a way of life but celebration of it. 
+          
+        div.card
+          h3 Expert Teaching
+          div.card-box
+            div.card-img
+              img(src="static/image/d3.png")
+            div.card-content
+              p Through their guidance, creating stars in the world of rhythm and movement.
+        
+    section#sponsorSection 
+        h2  Our Sponsors
+        div#sponsors
+          img(src="/static/image/splogo1.png", alt="Sponsors Image" class="spimg")
+          img(src="/static/image/splogo2.png", alt="Sponsors Image" class="spimg")
+          img(src="/static/image/splogo3.png", alt="Sponsors Image" class="spimg")
+          img(src="/static/image/splogo4.png", alt="Sponsors Image" class="spimg")
+
+
+    footer#footer
+        | Copyright © 2023 | SiNGH | Nrityashala.com  
+    script
+      include ../static/index.js
